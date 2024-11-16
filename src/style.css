@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1180px;
+    padding: 15px 15px;
+    position: relative;
+    min-width: 1180px;
+    float: none;
+}
+.container__slot{
+    margin-top: 90px;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    left: 200px;
+    padding: 10px 10px;
+    background:white;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+}
+
+.phone{
+    color: #7F7F7F;
+    white-space: nowrap;
+}
+
+.right{
+    display: flex;
+    padding-top: 20px;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.logo{
+    margin-right: 760px;
+}
+.info{
+    width: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.map{
+    width: 25px;
+    margin-right: 20px;
+}
+.card{
+    width: 30px;
+    margin-right: 20px;
+}
+.menu{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    border-left: 1px solid black;
+    padding: 20px;
+
+}
+
+.header-section {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.header-section img {
+    width: 100%;
+    height: auto;
+}
+
+.header-section h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.header-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.categories button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories button:hover {
+    background-color: #ddd;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card {
+    padding: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.burger-icon {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+}
+
+.burger-icon div {
+    background-color: #333;
+    height: 4px;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger-icon div.open:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-icon div.open:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon div.open:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+}
+
+.burger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger-menu li {
+    margin-left: 30px;
+    text-align: start;
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.icon-info, .icon-map, .icon-cart, .icon-menu {
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-inner{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    padding: 30px 30px;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+.carousel-control-next{
+    background:none;
+    color: black;
+    width: 70px;
+    height: 30px;
+    margin-top: 320px;
+    margin-right: 60px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.carousel__img{
+    border-radius: 20px;
+    display: flex;
+    max-width: 100%;
+}
+
+.btn1{
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 15px;
+    background: none;
+}
+.lux{
+    width: 265px;
+}
+
+.sushi__row{
+    display: flex;
+    margin-left: 60px;
+}
+
+.lux__p{
+    margin-top: 34px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.lux__text{
+    margin-bottom: -1px;
+    font-size: 14px;
+    color: #7F7F7F;
+}
+
+.lux__width{
+    color: #7F7F7F;
+    font-size: 14px;
+}
+
+.lux__portion{
+    margin-top: -12px;
+    font-size: 14px;
+    color: #7F7F7F;
+}
+
+.btn, .content .btn {
+    font-size: 22px;
+    color: #7F7F7F;
+    background-color: #fff;
+    border: 1px solid #7F7F7F;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 1140px) {
+    .container{
+        width: 992px;
+        margin-left: 10px;
+    }
+    .container__slot{
+        width: 992px;
+        margin-left: 40px;
+    }
+    .header{
+        margin-left: -170px;
+    }
+    .logo{
+        margin-right: 700px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        width: 776px;
+        margin: 0 50px;
+    }
+    .container__slot{
+        width: 776px;
+    }
+    .logo{
+        margin-right: 500px;
+    }
+}
+@media screen and (max-width: 776px) {
+    .container{
+        width: 576px;
+    }
+    .container__slot{
+        width: 575px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: 414px;
+    }
+    .container__slot{
+        width: 414px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .container{
+        width: 320px;
+    }
+    .container__slot{
+        width: 320px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container{
+        width: 100%;
+    }
+    .container__slot{
+        width: 100%;
+    }
+}
