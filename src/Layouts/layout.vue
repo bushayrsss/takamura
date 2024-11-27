@@ -15,7 +15,8 @@
           <img class="map" src="../assets/img/map22.png.svg" alt="#">
         </router-link>
         <router-link to="/card">
-          <img src="../assets/img/cart.svg" alt="#">
+          <img src="../assets/img/cart3.svg" alt="#">
+          <span>{{cartStore.totalItems}}</span>
         </router-link>
         <router-link to="" @click="visible = true">
           <img src="../assets/img/menu.svg" alt="">
@@ -72,7 +73,8 @@
 
 <script setup lang="ts">
 import {ref} from "vue";
-
+import {useCartStore} from "../stories/useCartStore.ts";
+const cartStore = useCartStore()
 const visible = ref(false)
 
 const links = [

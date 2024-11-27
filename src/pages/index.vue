@@ -80,31 +80,18 @@
       </div>
     </div>
     <div class="container__slot">
-      <div class="product-list row">
-        <pre class="pre">{{inputCategory}}</pre>
-        <div v-for="product in filtered " :key="product.id" class="product-card col-3">
-          <img :src="product.image" :alt="product.name" class="product-image" />
-          <h4 class="name">{{ product.name }}</h4>
-          <p class="description">{{ product.description }}</p>
-          <p class="description">{{ product.weight }}</p>
-          <p class="description">{{product.portion}}</p>
-          <div class="group">
-            <p class="price">{{product.price}}</p>
-            <div>
-              <button v-if="product.count > 0" @click="product.count--" class="button solid btn" value="-" action="minus">-</button>
-              <span class="count" v-if="product.count > 0">{{product.count}}</span>
-              <button @click="product.count++" class="button solid btn" value="+" action="buy">+</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <product-item
+          v-for="product in products"
+          :key="product.id"
+          :product="product"
+      />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { reactive, ref, watch} from "vue";
-
+import productItem from '../components/productItem.vue'
 let inputCategory = ref('set')
 let products  = reactive([
   {

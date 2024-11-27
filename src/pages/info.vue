@@ -1,7 +1,7 @@
 <template>
   <div class="container__slot">
     <div>
-      <p class="text">ИНФОРМАЦИЯ О ДОСТАВКЕ</p>
+      <p class="text">ИНФОРМАЦИЯ О ДОСТАВКЕ {{cartStore.totalItems}}</p>
       <p class="info__description">
         Мы принимаем заказы с 10.00 до 22.30 <br>
         Доставляем заказы с 11.00 до 23.20
@@ -46,7 +46,9 @@
 </template>
 
 <script setup lang="ts">
+import {useCartStore} from "../stories/useCartStore.ts";
 
+const cartStore = useCartStore()
 </script>
 
 <style scoped>

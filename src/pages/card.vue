@@ -1,11 +1,9 @@
 <template>
-  <div class="container__slot">
-    <p class="card__text">Корзина пуста</p>
-    <router-link to="/"><button class="btn3">Перейти к покупкам</button></router-link>
-  </div>
+  <cart></cart>
 </template>
 
 <script setup lang="ts">
+import cart from '../components/cart.vue'
 
 </script>
 
