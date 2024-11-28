@@ -88,15 +88,21 @@
             :product="product"
         />
       </div>
+      <product-item
+          v-for="product in products"
+          :key="product.id"
+          :product="product"
+      />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { reactive, ref, watch} from "vue";
-import ProductItem from "../components/ProductItem.vue";
 
 const inputCategory = ref('set')
+import productItem from '../components/productItem.vue'
+let inputCategory = ref('set')
 let products  = reactive([
   {
     id:0,
@@ -274,7 +280,6 @@ let products  = reactive([
     description: 'Угорь, рис ',
     weight: '101g',
     portion: '6pcs',
-    price:360 ,
     image: 'https://takamura-eats.ru/userfls/shop/small/1391_ugor.jpg',
     count: 0,
     filterName: 'sushi'
@@ -286,7 +291,6 @@ let products  = reactive([
         ' икра тобико',
     weight: '96g',
     portion: '4pcs',
-    price: 353,
     image: 'https://takamura-eats.ru/userfls/shop/small/1643_filadelfiya-fit.jpg',
     count: 0,
     filterName: 'sushi'
@@ -298,7 +302,6 @@ let products  = reactive([
         ' Cremette, соус унаги',
     weight: '103g',
     portion: '4pcs',
-    price: 695,
     image: 'https://takamura-eats.ru/userfls/shop/small/1623_vulkan.jpg',
     count: 0,
     filterName: 'sushi'
@@ -310,7 +313,6 @@ let products  = reactive([
         ' сыр, огурец',
     weight: '101g',
     portion: '4pcs',
-    price: 180,
     image: 'https://takamura-eats.ru/userfls/shop/small/1625_slivochnyy-ugor.jpg',
     count: 0,
     filterName: 'sushi'
