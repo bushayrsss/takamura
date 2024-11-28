@@ -36,6 +36,7 @@ const props = defineProps<{ product: Product }>();
 const { product } = toRefs(props);
 console.log(product.value.count)
 const cartStore = useCartStore();
+
 const addProductToCart = () => {
   cartStore.addToCart(product.value);
   product.value.count += 1;
