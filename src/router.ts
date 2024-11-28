@@ -18,9 +18,9 @@ const router = createRouter({
             component: () => import('./pages/map.vue'),
         },
         {
-            path:'/card',
-            name:'card',
-            component: () => import ('./pages/card.vue'),
+            path:'/cart',
+            name:'cart',
+            component: () => import ('./pages/cart.vue'),
         },
         {
             path:'/program',
@@ -36,6 +36,11 @@ const router = createRouter({
             path:'/contact',
             name:'contact',
             component: () => import('./pages/contact.vue')
+        },
+        {
+            path:'/agreement',
+            name: 'agreement',
+            component: () => import('./pages/agreement.vue')
         }
     ]});
 export default router;

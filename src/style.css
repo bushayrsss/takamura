@@ -1,6 +1,10 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+ul,li{
+    list-style: none;
 }
 .container{
     width: 1180px;
@@ -14,13 +18,15 @@
 }
 
 .header{
-    display: flex;
     position: fixed;
-    left: 200px;
+    width: 100%;
     padding: 10px 10px;
     background:white;
     z-index: 1000;
     border-bottom: 1px solid black;
+}
+.header img{
+    width: 30px;
 }
 
 .phone{
@@ -41,6 +47,7 @@ img{
 
 .logo{
     margin-right: 760px;
+    width: 50px;
 }
 .info{
     width: 25px;
@@ -195,7 +202,6 @@ img{
     width: 100%;
     display: flex;
     padding: 30px 30px;
-    margin-top: 120px;
     border-radius: 10px;
 }
 .carousel-control-next{
