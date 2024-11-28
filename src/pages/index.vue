@@ -81,18 +81,13 @@
     </div>
     <div class="container__slot">
       <div class="product-list row">
-        <pre class="pre">{{inputCategory}}</pre>
-        <ProductItem
+        <productItem
             v-for="product in filtered"
             :key="product.id"
             :product="product"
         />
       </div>
-      <product-item
-          v-for="product in products"
-          :key="product.id"
-          :product="product"
-      />
+
     </div>
   </section>
 </template>
@@ -101,8 +96,7 @@
 import { reactive, ref, watch} from "vue";
 
 const inputCategory = ref('set')
-import productItem from '../components/productItem.vue'
-let inputCategory = ref('set')
+import productItem from "../components/productItem.vue"
 let products  = reactive([
   {
     id:0,
